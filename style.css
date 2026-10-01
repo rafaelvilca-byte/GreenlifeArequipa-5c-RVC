@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9f4;
+    color: #2f3e46;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-icon {
+    font-size: 1.8rem;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2b9348;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: #354f52;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: #52b788;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    background: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%);
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.main-title {
+    font-size: 2.8rem;
+    color: #1b4332;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #2d6a4f;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2b9348;
+    color: #ffffff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1b4332;
+}
+
+.hero-image-container {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1b4332;
+    margin-bottom: 2.5rem;
+}
+
+.cards-section {
+    padding: 4rem 5%;
+    background-color: #ffffff;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #f4f9f4;
+    border: 1px solid #d8f3dc;
+    border-radius: 12px;
+    width: 260px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.2rem;
+}
+
+.card-body h3 {
+    font-size: 1.2rem;
+    color: #2d6a4f;
+    margin-bottom: 0.6rem;
+}
+
+.card-body p {
+    font-size: 0.92rem;
+    color: #4f772d;
+}
+
+.benefits-section {
+    padding: 4rem 5%;
+    background-color: #e9f5ed;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.benefit-box {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 240px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    border-top: 4px solid #52b788;
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.benefit-box h3 {
+    font-size: 1.1rem;
+    color: #1b4332;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-box p {
+    font-size: 0.88rem;
+    color: #4f772d;
+}
+
+.gallery-section {
+    padding: 4rem 5%;
+    background-color: #ffffff;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    width: 320px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.site-footer {
+    background-color: #1b4332;
+    color: #b7e4c7;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.95rem;
+}
+
+.site-footer p {
+    margin: 0.3rem 0;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main-title {
+        font-size: 2.2rem;
+    }
+}
